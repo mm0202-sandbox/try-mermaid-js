@@ -1,5 +1,28 @@
 # examples
 
+## escape
+
+`a---b---other`
+
+```mermaid
+flowchart LR
+a---b---other
+```
+
+`a---b--- other`
+
+```mermaid
+flowchart LR
+a---b--- other
+```
+
+`a---b---dummy["other"]`
+
+```mermaid
+flowchart LR
+a---b---dummy["other"]
+```
+
 ## tree style
 
 ```mermaid
