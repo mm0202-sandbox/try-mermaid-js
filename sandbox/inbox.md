@@ -2,6 +2,8 @@
 
 ## escape
 
+from https://stackoverflow.com/questions/28121525/mermaid-cli-how-do-you-escape-characters
+
 `a---b---other`
 
 ```mermaid
