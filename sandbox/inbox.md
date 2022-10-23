@@ -1,5 +1,32 @@
 # examples
 
+## tree style
+
+```mermaid
+flowchart TB
+    a---b
+    a---c
+        c---d
+        c---e
+```
+
+```mermaid
+flowchart LR
+    a---b
+    a---c
+        c---d
+        c---e
+```
+
+```mermaid
+flowchart TB
+    a---b
+    a---c
+        c---d
+        c---e
+            e-->a
+```
+
 ## classDiagram
 
 from https://mermaid-js.github.io/mermaid/#/classDiagram
