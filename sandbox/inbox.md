@@ -4,14 +4,19 @@
 
 from https://github.com/mermaid-js/mermaid/issues/1209
 
+### original
+
 ```mermaid
 flowchart LR
-subgraph subg [ ]
-  subgraph Internet
-    D[Client]
-  end
+subgraph Internet
+  D[Client]
 end
+```
 
+### patern 1
+
+```mermaid
+flowchart LR
 subgraph subg [ ]
   style subg fill:none,stroke:none
   subgraph Internet
@@ -19,6 +24,8 @@ subgraph subg [ ]
   end
 end
 ```
+
+### patern 2
 
 ```mermaid
 flowchart LR
