@@ -1,5 +1,45 @@
 # examples
 
+## subgraph label spacing
+
+from https://github.com/mermaid-js/mermaid/issues/1209
+
+```mermaid
+flowchart LR
+classDef subgraph_padding fill:none,stroke:none
+subgraph Internet
+style Internet stroke-dasharray: 5 5
+D[Client]
+end
+subgraph lan [Internal Network]
+subgraph subgraph_padding1 [ ]
+  style lan stroke-dasharray: 5 5
+  A[Pomerium]
+  D--oA
+  A<==>B
+  subgraph docker [Docker Network]
+  style docker margin-top: 10
+    B[Sidecar]
+    C[Service]
+  end
+end
+end
+class subgraph_padding1 subgraph_padding
+```
+
+```mermaid
+flowchart LR
+classDef subgraph_padding fill:none,stroke:none
+
+subgraph subgraph_padding1 [ ]
+  subgraph Internet
+    D[Client]
+  end
+end
+
+class subgraph_padding1 subgraph_padding
+```
+
 ## escape
 
 from https://stackoverflow.com/questions/28121525/mermaid-cli-how-do-you-escape-characters
